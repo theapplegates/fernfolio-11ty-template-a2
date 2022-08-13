@@ -1,6 +1,13 @@
+
 [build]
   publish = "_site"
-  command = "npm run build"
+  command = "eleventy"
+
+[[plugins]]
+  package = "netlify-plugin-cloudinary"
+  
+  [plugins.inputs]
+  cloudName = "paulportfolio"
 
 # REDIRECT and HEADERS examples
 
